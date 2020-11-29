@@ -1,188 +1,85 @@
-* {
+html {
+  font-size: 15px;
+}
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
 }
-
-html, body {
-  font-family: 'Roboto', sans-serif;
-  color: #29303b;
-  font-size: 15px;
-  font-weight: normal;
+.container1 {
+  padding: 0rem 10rem;
 }
-
-header .header__left {
+.caiform {
+  padding-top: 2.5rem;
+  height: 38rem;
+  background-image: url('https://img-a.udemycdn.com/notices/home_banner/image_udlite/99df738c-23de-4ed8-b515-2ab6367cd595.jpg?Cby4vQCtvaPjb3ArGs-W9WVOYT9XuaiZ-k0uXB3rStUIpS8ImvgfDpVnlQxhCN50yEnDKKEHcUKX7veSXkuPle6OEtztHeZZPoTL8nWRrnrpehbyGY-8etnmo2JmysVKLmFlhARh2Psr2QweOOQmX_S0up2RbjzifyYgENH8WEukhUia1PUp4w');
+}
+#header-img {
+  width: 100%;
+}
+.divmaydongchu {
+  margin-top: 1rem;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  color: rgb(148, 148, 148);
 }
-
-header .header__left .navbar-brand {
-  flex-grow: 1;
+.content-trong-maydongchu {
+  display: flex;
+  margin: 1rem 1rem;
+  width: 30%;
 }
-
-header .header__left .navbar-brand img {
-  width: 110px;
+h4,
+p {
+  margin: 0.5rem 0 !important;
+  margin-top: 0 !important;
+  color: black !important;
 }
-
-header .header__left .categories {
-  flex-grow: 1;
+.icon::before {
+  background-color: rgb(219, 219, 219);
+  padding: 1rem 1rem;
+  border-radius: 2rem;
 }
-
-header .header__left .header__form {
-  flex-grow: 6;
+.icon {
+  height: 3rem;
+  width: 3rem;
+  line-height: 1rem;
+  text-align: center !important;
+  font-size: 1.5rem !important;
+  margin: 0.5rem;
+  margin-right: 1rem;
+  color: rgb(37, 105, 207);
 }
-
-header .header__left .header__form .input-group {
-  background-color: #f2f3f5;
-  border: 1px solid #f2f3f5;
+#form {
+  text-align: left;
+  width: 27%;
+  height: 85%;
+  margin: 3rem 3rem;
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+  padding: 1rem 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-header .header__left .header__form .input-group .form-control {
-  background-color: transparent;
-  border-color: transparent;
-  box-shadow: none;
+#input {
+  width: 80%;
+  height: 15%;
+  margin-top: 1rem;
+  padding-left: 1rem;
 }
-
-header .header__left .header__form .input-group .form-control:focus {
-  background-color: #fff;
-  border-color: #dedfe0;
-  border-right-color: transparent;
+#chua-may-cai-card {
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-
-header .header__left .header__form .input-group .form-control:focus + .input-group-append .input-group-text {
-  background-color: #fff;
-  border-color: #dedfe0;
-  border-left-color: transparent;
-}
-
-header .header__left .header__form .input-group .form-control:focus + .input-group-append .input-group-text:hover {
-  background-color: #ec5252;
-  color: #fff;
-}
-
-header .header__left .header__form .input-group .input-group-text {
-  background-color: transparent;
-  border-color: transparent;
-  color: #ec5252;
-}
-
-header .header__left .header__form .input-group .input-group-text:hover {
-  background-color: #ec5252;
-  color: #fff;
-}
-
-@media screen and (max-width: 1200px) {
-  header .header__right .business, header .header__right .teach {
-    display: none;
-  }
-}
-
-.udemyCarousel {
-  background-image: url(../img/cover.jpg);
-  background-size: cover;
-  height: 500px;
-}
-
-.udemyCarousel .udemyCarousel__row {
-  align-items: center;
-  height: 100%;
-}
-
-.udemyCarousel form .input-group {
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-
-.udemyCarousel form .input-group .form-control {
-  background-color: transparent;
-  border-color: transparent;
-  box-shadow: none;
-}
-
-.udemyCarousel form .input-group .form-control:focus {
-  background-color: #fff;
-  border-color: #fff;
-  border-right-color: transparent;
-}
-
-.udemyCarousel form .input-group .form-control:focus + .input-group-append .input-group-text {
-  background-color: #fff;
-  border-color: #fff;
-  border-left-color: transparent;
-}
-
-.udemyCarousel form .input-group .form-control:focus + .input-group-append .input-group-text:hover {
-  background-color: #ec5252;
-  color: #fff;
-}
-
-.udemyCarousel form .input-group .input-group-text {
-  background-color: transparent;
-  border-color: transparent;
-  color: #ec5252;
-}
-
-.udemyCarousel form .input-group .input-group-text:hover {
-  background-color: #ec5252;
-  color: #fff;
-}
-
-.udemybtn-white {
-  background-color: #fff;
-  border: 1px solid #686f7a;
-  padding: 11px 12px;
-  border-radius: 2px;
-  color: #686f7a;
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.udemybtn-white:hover {
-  background-color: #fff;
-  border-color: #29303b;
-  color: #29303b;
-}
-
-.udemybtn-red {
-  background-color: #ec5252;
-  border: 1px solid transparent;
-  padding: 11px 12px;
-  border-radius: 2px;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.udemybtn-red:hover {
-  background-color: #992337;
-  border-color: transparent;
-  color: #fff;
-}
-
-#btn{
-  margin-left: 5%;
-}
-
-/* Intro */
-.intro{
-  background: url(https://s.udemycdn.com/browse_components/shared-assets/purple-intersect.svg) repeat-x #6e1a52;
-    background-size: auto 120%;
-    background-position: 0 -2.4rem;
-    color: #fff;
-    padding-top: 4.8rem;
-    padding-bottom: 4.8rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 0;
-}
-.intro h3, .intro a{
-  font-weight: bolder;
-}
-
-.intro a{
-  padding: 0.8%;
-  border: 2px solid white;
-  border-radius: 5%;
+.cai-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+  height: 30rem;
+  margin: 1rem 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

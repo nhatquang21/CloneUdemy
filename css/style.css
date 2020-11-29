@@ -186,3 +186,24 @@ header .header__left .header__form .input-group .input-group-text:hover {
   border: 2px solid white;
   border-radius: 5%;
 }
+
+
+/* Category */
+#category{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#category .card{
+ cursor: pointer;
+  color: #3c3b37;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  padding-bottom: 2%;
+  margin: 2%;
+  width: 20%;
+}
+.card__title{
+  padding-left: 5%;
+}

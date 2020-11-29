@@ -190,6 +190,7 @@ header .header__left .header__form .input-group .input-group-text:hover {
 
 /* Category */
 #category{
+  margin: 5% 0;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -206,4 +207,92 @@ header .header__left .header__form .input-group .input-group-text:hover {
 }
 .card__title{
   padding-left: 5%;
+}
+
+/* Teacher */
+.teacher__info{
+  padding: 2% 0;
+  background-color: #fbfbf8;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.teacher__things{
+
+  padding-left: 35%;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+}
+.teacher__img{
+  top: -60px;
+  left: 350px;
+  position: absolute;
+}
+.teacher__img img{
+  width: 300px;
+}
+.teacher{
+  position: relative;
+  margin-bottom: 5%;
+}
+ .btn{
+  background-color: #0f7c90;
+  color: white;
+  width: 50%;
+  font-weight: bold;
+}
+
+/* Business */
+.business__info{
+  padding: 4%;
+  background-color: #003640;
+  display: flex;
+  justify-content: center;
+}
+.business__things{
+  color: white;
+  padding-right: 20%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.business__info .btn{
+  width: 75%;
+}
+.udemyBusiness{
+  position: relative;
+  margin-top:  10% ;
+}
+.business__img{
+  display: block;
+  position: absolute;
+  top: -60px;
+  right: 200px;
+}
+
+.business__info h3, .teacher__info h3{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* Sponsored */
+.sponsored{
+  padding: 5%;
+  display: flex;
+  justify-content: centner;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.sponsored__logo{
+  display: flex;
+  flex-direction: row;
+}
+.logo-item{
+  margin: 10px;
 }

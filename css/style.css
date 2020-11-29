@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  color: #29303b;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+header .header__left {
+  display: flex;
+  align-items: center;
+}
+
+header .header__left .navbar-brand {
+  flex-grow: 1;
+}
+
+header .header__left .navbar-brand img {
+  width: 110px;
+}
+
+header .header__left .categories {
+  flex-grow: 1;
+}
+
+header .header__left .header__form {
+  flex-grow: 6;
+}
+
+header .header__left .header__form .input-group {
+  background-color: #f2f3f5;
+  border: 1px solid #f2f3f5;
+}
+
+header .header__left .header__form .input-group .form-control {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+header .header__left .header__form .input-group .form-control:focus {
+  background-color: #fff;
+  border-color: #dedfe0;
+  border-right-color: transparent;
+}
+
+header .header__left .header__form .input-group .form-control:focus + .input-group-append .input-group-text {
+  background-color: #fff;
+  border-color: #dedfe0;
+  border-left-color: transparent;
+}
+
+header .header__left .header__form .input-group .form-control:focus + .input-group-append .input-group-text:hover {
+  background-color: #ec5252;
+  color: #fff;
+}
+
+header .header__left .header__form .input-group .input-group-text {
+  background-color: transparent;
+  border-color: transparent;
+  color: #ec5252;
+}
+
+header .header__left .header__form .input-group .input-group-text:hover {
+  background-color: #ec5252;
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  header .header__right .business, header .header__right .teach {
+    display: none;
+  }
+}
+
+.udemyCarousel {
+  background-image: url(../img/cover.jpg);
+  background-size: cover;
+  height: 500px;
+}
+
+.udemyCarousel .udemyCarousel__row {
+  align-items: center;
+  height: 100%;
+}
+
+.udemyCarousel form .input-group {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.udemyCarousel form .input-group .form-control {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.udemyCarousel form .input-group .form-control:focus {
+  background-color: #fff;
+  border-color: #fff;
+  border-right-color: transparent;
+}
+
+.udemyCarousel form .input-group .form-control:focus + .input-group-append .input-group-text {
+  background-color: #fff;
+  border-color: #fff;
+  border-left-color: transparent;
+}
+
+.udemyCarousel form .input-group .form-control:focus + .input-group-append .input-group-text:hover {
+  background-color: #ec5252;
+  color: #fff;
+}
+
+.udemyCarousel form .input-group .input-group-text {
+  background-color: transparent;
+  border-color: transparent;
+  color: #ec5252;
+}
+
+.udemyCarousel form .input-group .input-group-text:hover {
+  background-color: #ec5252;
+  color: #fff;
+}
+
+.udemybtn-white {
+  background-color: #fff;
+  border: 1px solid #686f7a;
+  padding: 11px 12px;
+  border-radius: 2px;
+  color: #686f7a;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.udemybtn-white:hover {
+  background-color: #fff;
+  border-color: #29303b;
+  color: #29303b;
+}
+
+.udemybtn-red {
+  background-color: #ec5252;
+  border: 1px solid transparent;
+  padding: 11px 12px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.udemybtn-red:hover {
+  background-color: #992337;
+  border-color: transparent;
+  color: #fff;
+}
+
+#btn{
+  margin-left: 5%;
+}
+
+/* Intro */
+.intro{
+  background: url(https://s.udemycdn.com/browse_components/shared-assets/purple-intersect.svg) repeat-x #6e1a52;
+    background-size: auto 120%;
+    background-position: 0 -2.4rem;
+    color: #fff;
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0;
+}
+.intro h3, .intro a{
+  font-weight: bolder;
+}
+
+.intro a{
+  padding: 0.8%;
+  border: 2px solid white;
+  border-radius: 5%;
+}

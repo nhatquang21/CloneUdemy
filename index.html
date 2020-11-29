@@ -19,7 +19,13 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
@@ -63,7 +69,18 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class="fa fa-shopping-cart"></i>
+                  <button
+                    id="cart"
+                    style="width: 100%"
+                    type="button"
+                    class="myPopover"
+                    data-toggle="popover"
+                    data-placement="bottom"
+                    data-trigger="hover"
+                    data-content="Your cart is empty"
+                  >
+                    <i class="fa fa-shopping-cart"></i>
+                  </button>
                 </a>
               </li>
               <li id="btn" class="nav-item">
@@ -89,10 +106,93 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
       </nav>
     </header>
+    <hr />
+    <div class="container container1">
+      <h2 style="text-align: left">Students are viewing</h2>
+      <div id="chua-may-cai-card" class="responsive"></div>
+    </div>
     <div class="intro">
       <h3>Get personal learning recommendations</h3>
       <p>Answer a few questions for your topics</p>
       <a>Get started</a>
+    </div>
+    <!-- Category -->
+    <div id="category"></div>
+    <!-- Teacher -->
+    <div class="teacher">
+      <div class="teacher__img">
+        <img
+          src="https://s.udemycdn.com/home/non-student-cta/udlite-lohp-promo-teacher.jpg"
+          alt=""
+        />
+      </div>
+      <div class="teacher__info">
+        <div class="teacher__things">
+          <h3>Become an instructor</h3>
+          <p>
+            Top instructors from around the world teach millions<br />
+            of students on Udemy. We provide the<br />
+            tools and skills to teach what you love.
+          </p>
+          <button class="btn">Start teaching today</button>
+        </div>
+      </div>
+    </div>
+    <div class="sponsored">
+      <h4>Trusted by companies of all sizes</h4>
+      <div class="sponsored__logo">
+        <div class="logo-item">
+          <img
+            alt="booking"
+            width="151"
+            height="26"
+            src="https://s.udemycdn.com/partner-logos/booking-logo.svg"
+          />
+        </div>
+        <div class="logo-item">
+          <img
+            alt="volkswagen"
+            width="32"
+            height="32"
+            src="https://s.udemycdn.com/partner-logos/volkswagen-logo.svg"
+          />
+        </div>
+        <div class="logo-item">
+          <img
+            alt="adidas"
+            width="47"
+            height="32"
+            src="https://s.udemycdn.com/partner-logos/adidas-logo.svg"
+          />
+        </div>
+        <div class="logo-item">
+          <img
+            alt="eventbrite"
+            width="115"
+            height="32"
+            src="https://s.udemycdn.com/partner-logos/eventbrite-logo.svg"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="udemyBusiness">
+      <div class="business__img">
+        <img
+          width="320"
+          src="https://s.udemycdn.com/home/non-student-cta/udlite-lohp-promo-ufb.jpg"
+          alt=""
+        />
+      </div>
+      <div class="business__info">
+        <div class="business__things">
+          <h3>Udemy For Business</h3>
+          <p>
+            Get unlimited access to 5,000+ of Udemy’s top <br />courses for your
+            team.
+          </p>
+          <button class="btn">Get udemy for business</button>
+        </div>
+      </div>
     </div>
     <footer></footer>
 
@@ -112,4 +212,11 @@
       crossorigin="anonymous"
     ></script>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.20/dist/js/splide.min.js"></script>
+  <script>
+    $(function () {
+      $('.myPopover').popover();
+    });
+  </script>
+  <script src="/js/index.js"></script>
 </html>

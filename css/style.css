@@ -42,7 +42,12 @@ header .header__left .header__form .input-group .form-control {
   border-color: transparent;
   box-shadow: none;
 }
-
+.myPopover{
+  padding: 5px 15px ;
+width: 100%;
+ border: 0px white;
+ background-color: white;
+}
 header .header__left .header__form .input-group .form-control:focus {
   background-color: #fff;
   border-color: #dedfe0;
@@ -77,56 +82,23 @@ header .header__left .header__form .input-group .input-group-text:hover {
   }
 }
 
-.udemyCarousel {
-  background-image: url(../img/cover.jpg);
-  background-size: cover;
-  height: 500px;
-}
 
-.udemyCarousel .udemyCarousel__row {
-  align-items: center;
-  height: 100%;
-}
 
-.udemyCarousel form .input-group {
-  background-color: #fff;
-  border: 1px solid #fff;
+/* Cards
+ */
+ #chua-may-cai-card {
+  display: flex;
+ flex-wrap: wrap;
 }
-
-.udemyCarousel form .input-group .form-control {
-  background-color: transparent;
-  border-color: transparent;
-  box-shadow: none;
+.cai-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+  height: 25rem;
+  margin: 1rem 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.udemyCarousel form .input-group .form-control:focus {
-  background-color: #fff;
-  border-color: #fff;
-  border-right-color: transparent;
-}
-
-.udemyCarousel form .input-group .form-control:focus + .input-group-append .input-group-text {
-  background-color: #fff;
-  border-color: #fff;
-  border-left-color: transparent;
-}
-
-.udemyCarousel form .input-group .form-control:focus + .input-group-append .input-group-text:hover {
-  background-color: #ec5252;
-  color: #fff;
-}
-
-.udemyCarousel form .input-group .input-group-text {
-  background-color: transparent;
-  border-color: transparent;
-  color: #ec5252;
-}
-
-.udemyCarousel form .input-group .input-group-text:hover {
-  background-color: #ec5252;
-  color: #fff;
-}
-
 .udemybtn-white {
   background-color: #fff;
   border: 1px solid #686f7a;
@@ -185,4 +157,114 @@ header .header__left .header__form .input-group .input-group-text:hover {
   padding: 0.8%;
   border: 2px solid white;
   border-radius: 5%;
+}
+
+
+/* Category */
+#category{
+  margin: 5% 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#category .card{
+ cursor: pointer;
+  color: #3c3b37;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  padding-bottom: 2%;
+  margin: 2%;
+  width: 20%;
+}
+.card__title{
+  padding-left: 5%;
+}
+
+/* Teacher */
+.teacher__info{
+  padding: 2% 0;
+  background-color: #fbfbf8;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.teacher__things{
+
+  padding-left: 35%;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+}
+.teacher__img{
+  top: -60px;
+  left: 350px;
+  position: absolute;
+}
+.teacher__img img{
+  width: 300px;
+}
+.teacher{
+  position: relative;
+  margin-bottom: 5%;
+}
+ .btn{
+  background-color: #0f7c90;
+  color: white;
+  width: 50%;
+  font-weight: bold;
+}
+
+/* Business */
+.business__info{
+  padding: 4%;
+  background-color: #003640;
+  display: flex;
+  justify-content: center;
+}
+.business__things{
+  color: white;
+  padding-right: 20%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.business__info .btn{
+  width: 75%;
+}
+.udemyBusiness{
+  position: relative;
+  margin-top:  10% ;
+}
+.business__img{
+  display: block;
+  position: absolute;
+  top: -60px;
+  right: 200px;
+}
+
+.business__info h3, .teacher__info h3{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* Sponsored */
+.sponsored{
+  padding: 5%;
+  display: flex;
+  justify-content: centner;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.sponsored__logo{
+  display: flex;
+  flex-direction: row;
+}
+.logo-item{
+  margin: 10px;
 }

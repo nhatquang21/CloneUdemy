@@ -10,7 +10,9 @@ html, body {
   font-size: 15px;
   font-weight: normal;
 }
-
+header{
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
 header .header__left {
   display: flex;
   align-items: center;
@@ -87,15 +89,17 @@ header .header__left .header__form .input-group .input-group-text:hover {
 /* Cards
  */
  #chua-may-cai-card {
+   justify-content: center;
   display: flex;
  flex-wrap: wrap;
 }
 .cai-card {
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 20%;
-  height: 25rem;
+  max-height: 20rem;
   margin: 1rem 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -267,4 +271,81 @@ justify-content: center;
 }
 .logo-item{
   margin: 10px;
+}
+
+/* H */
+.container1 {
+  padding: 0rem 10rem;
+}
+.cartStatus{
+  position: absolute;
+  top: 0;
+}
+.caiform {
+  padding-top: 2.5rem;
+  height: 25rem;
+  background-image: url('https://img-a.udemycdn.com/notices/home_banner/image_udlite/99df738c-23de-4ed8-b515-2ab6367cd595.jpg?Cby4vQCtvaPjb3ArGs-W9WVOYT9XuaiZ-k0uXB3rStUIpS8ImvgfDpVnlQxhCN50yEnDKKEHcUKX7veSXkuPle6OEtztHeZZPoTL8nWRrnrpehbyGY-8etnmo2JmysVKLmFlhARh2Psr2QweOOQmX_S0up2RbjzifyYgENH8WEukhUia1PUp4w');
+
+}
+#header-img {
+  width: 100%;
+}
+.divmaydongchu {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(148, 148, 148);
+}
+.content-trong-maydongchu {
+  display: flex;
+  margin: 1rem 1rem;
+  width: 30%;
+}
+h4,
+p {
+  margin: 0.5rem 0 !important;
+  margin-top: 0 !important;
+  color: black !important;
+}
+.icon::before {
+  background-color: rgb(219, 219, 219);
+  padding: 1rem 1rem;
+  border-radius: 2rem;
+}
+.icon {
+  height: 3rem;
+  width: 3rem;
+  line-height: 1rem;
+  text-align: center !important;
+  font-size: 1.5rem !important;
+  margin: 0.5rem;
+  margin-right: 1rem;
+  color: rgb(37, 105, 207);
+}
+#form {
+  text-align: left;
+  width: 40%;
+  height: 85%;
+  margin: 3rem 3rem;
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+  padding: 1rem 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#input {
+  width: 80%;
+  height: 15%;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+#cho-tim-kiem {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+#button-cua-tui {
+  border: none;
+}
+#hinh-trong-students-viewing {
+  max-width: 100%;
 }

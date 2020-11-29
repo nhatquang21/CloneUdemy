@@ -69,18 +69,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <button
-                    id="cart"
-                    style="width: 100%"
-                    type="button"
-                    class="myPopover"
-                    data-toggle="popover"
-                    data-placement="bottom"
-                    data-trigger="hover"
-                    data-content="Your cart is empty"
-                  >
-                    <i class="fa fa-shopping-cart"></i>
-                  </button>
+                  <i class="fa fa-shopping-cart"></i>
                 </a>
               </li>
               <li id="btn" class="nav-item">
@@ -106,10 +95,90 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
       </nav>
     </header>
+    <!-- cai anh voi may dong chu duoi cai anh -->
+    <div class="container1">
+      <div class="cartStatus">1</div>
+      <div class="caiform">
+        <form id="form" style="padding-left: 2rem">
+          <h1 style="margin: 0; margin-bottom: 1rem">
+            Learn. Expand your knowledge.<br />Achieve your goals.
+          </h1>
+          <p>
+            Achieve your goals with a new course.<br />Classes start at US $
+            10.99 only.
+          </p>
+          <input
+            type="text"
+            id="input"
+            placeholder="What do you want to learn?"
+            value=""
+          />
+        </form>
+      </div>
+      <div class="divmaydongchu">
+        <div class="content-trong-maydongchu">
+          <i class="fa fa-tv icon"></i>
+          <div style="text-align: left">
+            <h4>130,000 online courses</h4>
+            <p>Enjoy a variety of hot topics</p>
+          </div>
+        </div>
+        <div class="content-trong-maydongchu">
+          <i class="fa fa-tv icon"></i>
+          <div style="text-align: left">
+            <h4>Courses given by experts</h4>
+            <p>Find the trainer that suits you</p>
+          </div>
+        </div>
+        <div class="content-trong-maydongchu">
+          <i class="fa fa-play icon"></i>
+          <div style="text-align: left">
+            <h4>Unlimited access</h4>
+            <p>Learn at your own pace</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <hr />
-    <div class="container container1">
+
+    <!-- cho search -->
+    <div class="container1">
+      <h1>Search result</h1>
+      <div id="cho-tim-kiem"></div>
+    </div>
+
+    <!-- may dong chu duoi cho search -->
+    <hr />
+    <div class="container1">
+      <div class="divmaydongchu">
+        <div class="content-trong-maydongchu">
+          <i class="fa fa-tv icon"></i>
+          <div style="text-align: left">
+            <h4>Go at your own pace</h4>
+            <p>Enjoy lifetime access to courses on Udemy’s website and app</p>
+          </div>
+        </div>
+        <div class="content-trong-maydongchu">
+          <i class="fa fa-tv icon"></i>
+          <div style="text-align: left">
+            <h4>Learn from industry experts</h4>
+            <p>Select from top instructors around the world</p>
+          </div>
+        </div>
+        <div class="content-trong-maydongchu">
+          <i class="fa fa-play icon"></i>
+          <div style="text-align: left">
+            <h4>Find video courses on almost any topic</h4>
+            <p>Build your library for your career and personal growth</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <div class="container">
       <h2 style="text-align: left">Students are viewing</h2>
-      <div id="chua-may-cai-card" class="responsive"></div>
+      <div id="chua-may-cai-card"></div>
     </div>
     <div class="intro">
       <h3>Get personal learning recommendations</h3>

@@ -42,7 +42,12 @@ header .header__left .header__form .input-group .form-control {
   border-color: transparent;
   box-shadow: none;
 }
-
+.myPopover{
+  padding: 5px 15px ;
+width: 100%;
+ border: 0px white;
+ background-color: white;
+}
 header .header__left .header__form .input-group .form-control:focus {
   background-color: #fff;
   border-color: #dedfe0;
@@ -77,56 +82,23 @@ header .header__left .header__form .input-group .input-group-text:hover {
   }
 }
 
-.udemyCarousel {
-  background-image: url(../img/cover.jpg);
-  background-size: cover;
-  height: 500px;
-}
 
-.udemyCarousel .udemyCarousel__row {
-  align-items: center;
-  height: 100%;
-}
 
-.udemyCarousel form .input-group {
-  background-color: #fff;
-  border: 1px solid #fff;
+/* Cards
+ */
+ #chua-may-cai-card {
+  display: flex;
+ flex-wrap: wrap;
 }
-
-.udemyCarousel form .input-group .form-control {
-  background-color: transparent;
-  border-color: transparent;
-  box-shadow: none;
+.cai-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+  height: 25rem;
+  margin: 1rem 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.udemyCarousel form .input-group .form-control:focus {
-  background-color: #fff;
-  border-color: #fff;
-  border-right-color: transparent;
-}
-
-.udemyCarousel form .input-group .form-control:focus + .input-group-append .input-group-text {
-  background-color: #fff;
-  border-color: #fff;
-  border-left-color: transparent;
-}
-
-.udemyCarousel form .input-group .form-control:focus + .input-group-append .input-group-text:hover {
-  background-color: #ec5252;
-  color: #fff;
-}
-
-.udemyCarousel form .input-group .input-group-text {
-  background-color: transparent;
-  border-color: transparent;
-  color: #ec5252;
-}
-
-.udemyCarousel form .input-group .input-group-text:hover {
-  background-color: #ec5252;
-  color: #fff;
-}
-
 .udemybtn-white {
   background-color: #fff;
   border: 1px solid #686f7a;

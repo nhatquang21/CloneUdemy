@@ -19,7 +19,13 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
@@ -63,7 +69,18 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class="fa fa-shopping-cart"></i>
+                  <button
+                    id="cart"
+                    style="width: 100%"
+                    type="button"
+                    class="myPopover"
+                    data-toggle="popover"
+                    data-placement="bottom"
+                    data-trigger="hover"
+                    data-content="Your cart is empty"
+                  >
+                    <i class="fa fa-shopping-cart"></i>
+                  </button>
                 </a>
               </li>
               <li id="btn" class="nav-item">
@@ -89,7 +106,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
       </nav>
     </header>
-
+    <hr />
+    <div class="container container1">
+      <h2 style="text-align: left">Students are viewing</h2>
+      <div id="chua-may-cai-card" class="responsive"></div>
+    </div>
     <div class="intro">
       <h3>Get personal learning recommendations</h3>
       <p>Answer a few questions for your topics</p>
@@ -173,7 +194,6 @@
         </div>
       </div>
     </div>
-
     <footer></footer>
 
     <script
@@ -192,5 +212,11 @@
       crossorigin="anonymous"
     ></script>
   </body>
-  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.20/dist/js/splide.min.js"></script>
+  <script>
+    $(function () {
+      $('.myPopover').popover();
+    });
+  </script>
+  <script src="/js/index.js"></script>
 </html>

@@ -19,12 +19,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link rel="stylesheet" href="css/slick.css" />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -44,10 +39,12 @@
               <div class="input-group">
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control inputHeader"
                   placeholder="Search for anything"
                   aria-label="Recipient's username"
                   aria-describedby="basic-addon2"
+                  id="input"
+                  value=""
                 />
                 <div class="input-group-append">
                   <span class="input-group-text" id="basic-addon2">
@@ -69,7 +66,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class="fa fa-shopping-cart"></i>
+                  <i id="cartItem" class="fa fa-shopping-cart"></i>
                 </a>
               </li>
               <li id="btn" class="nav-item">
@@ -95,9 +92,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
       </nav>
     </header>
+
     <!-- cai anh voi may dong chu duoi cai anh -->
     <div class="container1">
-      <div class="cartStatus">1</div>
+      <div id="cartStatus"></div>
       <div class="caiform">
         <form id="form" style="padding-left: 2rem">
           <h1 style="margin: 0; margin-bottom: 1rem">
@@ -263,7 +261,167 @@
         </div>
       </div>
     </div>
-    <footer></footer>
+    <footer id="cai-footer">
+      <hr style="margin-top: 3rem" />
+      <div id="clip-va-chu" class="container">
+        <iframe
+          width="60%"
+          height="327"
+          src="https://www.youtube.com/embed/QFIhEmOd6No"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <div id="chu">
+          <h1 style="margin: 0rem 3rem">
+            Transform your life through education
+          </h1>
+          <p style="margin: 0rem 3rem !important">
+            Mohamad Alaloush launched a new career in software development by
+            taking courses on Udemy. What will you be able to do?
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div
+        style="display: flex; justify-content: flex-start"
+        class="container footerUl"
+      >
+        <ul>
+          <li>
+            <a
+              class="link udlite-text-sm ud-ufb-notice-click-event"
+              href="https://business.udemy.com/?locale=en_US&amp;mx_pg=home-page&amp;ref=footer"
+              target="_blank"
+              rel="noopener"
+              data-placement="footer"
+            >
+              Udemy for Business
+            </a>
+          </li>
+          <li>
+            <a class="link udlite-text-sm" href="/teaching/?ref=teach_footer">
+              Teach on Udemy
+            </a>
+          </li>
+          <li>
+            <a
+              class="link udlite-text-sm"
+              href="/mobile/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get the app
+            </a>
+          </li>
+          <li>
+            <a
+              class="link udlite-text-sm"
+              href="https://about.udemy.com/company?locale=en-us#offices"
+            >
+              Contact us
+            </a>
+          </li>
+          <li>
+            <a
+              class="link udlite-text-sm"
+              href="https://about.udemy.com/?locale=en-us"
+            >
+              About us
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a
+              class="link udlite-text-sm ud-ufb-notice-click-event"
+              href="https://business.udemy.com/?locale=en_US&amp;mx_pg=home-page&amp;ref=footer"
+              target="_blank"
+              rel="noopener"
+              data-placement="footer"
+            >
+              Udemy for Business
+            </a>
+          </li>
+          <li>
+            <a class="link udlite-text-sm" href="/teaching/?ref=teach_footer">
+              Teach on Udemy
+            </a>
+          </li>
+          <li>
+            <a
+              class="link udlite-text-sm"
+              href="/mobile/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get the app
+            </a>
+          </li>
+          <li>
+            <a
+              class="link udlite-text-sm"
+              href="https://about.udemy.com/company?locale=en-us#offices"
+            >
+              Contact us
+            </a>
+          </li>
+          <li>
+            <a
+              class="link udlite-text-sm"
+              href="https://about.udemy.com/?locale=en-us"
+            >
+              About us
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a
+              class="link udlite-text-sm ud-ufb-notice-click-event"
+              href="https://business.udemy.com/?locale=en_US&amp;mx_pg=home-page&amp;ref=footer"
+              target="_blank"
+              rel="noopener"
+              data-placement="footer"
+            >
+              Udemy for Business
+            </a>
+          </li>
+          <li>
+            <a class="link udlite-text-sm" href="/teaching/?ref=teach_footer">
+              Teach on Udemy
+            </a>
+          </li>
+          <li>
+            <a
+              class="link udlite-text-sm"
+              href="/mobile/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get the app
+            </a>
+          </li>
+          <li>
+            <a
+              class="link udlite-text-sm"
+              href="https://about.udemy.com/company?locale=en-us#offices"
+            >
+              Contact us
+            </a>
+          </li>
+          <li>
+            <a
+              class="link udlite-text-sm"
+              href="https://about.udemy.com/?locale=en-us"
+            >
+              About us
+            </a>
+          </li>
+        </ul>
+        <img id="udemy-footer" src="http://127.0.0.1:5500/img/logo-coral.svg" />
+      </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"

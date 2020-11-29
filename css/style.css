@@ -4,13 +4,17 @@
   box-sizing: border-box;
 }
 
-html, body {
-  font-family: 'Roboto', sans-serif;
+html,
+body {
+  font-family: "Roboto", sans-serif;
   color: #29303b;
   font-size: 15px;
   font-weight: normal;
 }
-header{
+.inputHeader {
+  margin-top: 0 !important;
+}
+header {
   box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 header .header__left {
@@ -44,11 +48,11 @@ header .header__left .header__form .input-group .form-control {
   border-color: transparent;
   box-shadow: none;
 }
-.myPopover{
-  padding: 5px 15px ;
-width: 100%;
- border: 0px white;
- background-color: white;
+.myPopover {
+  padding: 5px 15px;
+  width: 100%;
+  border: 0px white;
+  background-color: white;
 }
 header .header__left .header__form .input-group .form-control:focus {
   background-color: #fff;
@@ -79,27 +83,58 @@ header .header__left .header__form .input-group .input-group-text:hover {
 }
 
 @media screen and (max-width: 1200px) {
-  header .header__right .business, header .header__right .teach {
+  header .header__right .business,
+  header .header__right .teach {
     display: none;
   }
 }
 
-
-
 /* Cards
  */
- #chua-may-cai-card {
-   justify-content: center;
+#chua-may-cai-card {
+  justify-content: center;
   display: flex;
- flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.card-info {
+  position: absolute;
+  bottom: 10px;
+  left: 10%;
+
+  width: 100%;
+}
+.card-info button {
+  display: none;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  border-radius: 8px;
+  height: 50px;
+  width: 80%;
+  background: linear-gradient(to left, #fb4226, #ce3017 100%);
+}
+.cai-card:hover .card-info button {
+  transform: all 0.5s;
+  display: block;
+}
+
+.cai-card:hover .price,
+.cai-card:hover .cai-card .author {
+  display: none;
+}
+.card-btn:hover {
+  color: white;
+  height: 60px;
+  background: #992337;
 }
 .cai-card {
+  position: relative;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 20%;
-  max-height: 20rem;
+  min-height: 24rem;
   margin: 1rem 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -135,45 +170,45 @@ header .header__left .header__form .input-group .input-group-text:hover {
   color: #fff;
 }
 
-#btn{
+#btn {
   margin-left: 5%;
 }
 
 /* Intro */
-.intro{
+.intro {
   background: url(https://s.udemycdn.com/browse_components/shared-assets/purple-intersect.svg) repeat-x #6e1a52;
-    background-size: auto 120%;
-    background-position: 0 -2.4rem;
-    color: #fff;
-    padding-top: 4.8rem;
-    padding-bottom: 4.8rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 0;
+  background-size: auto 120%;
+  background-position: 0 -2.4rem;
+  color: #fff;
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0;
 }
-.intro h3, .intro a{
+.intro h3,
+.intro a {
   font-weight: bolder;
 }
 
-.intro a{
+.intro a {
   padding: 0.8%;
   border: 2px solid white;
   border-radius: 5%;
 }
 
-
 /* Category */
-#category{
+#category {
   margin: 5% 0;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-#category .card{
- cursor: pointer;
+#category .card {
+  cursor: pointer;
   color: #3c3b37;
   font-weight: bolder;
   font-size: 1.2rem;
@@ -181,12 +216,12 @@ header .header__left .header__form .input-group .input-group-text:hover {
   margin: 2%;
   width: 20%;
 }
-.card__title{
+.card__title {
   padding-left: 5%;
 }
 
 /* Teacher */
-.teacher__info{
+.teacher__info {
   padding: 2% 0;
   background-color: #fbfbf8;
   display: flex;
@@ -195,26 +230,25 @@ header .header__left .header__form .input-group .input-group-text:hover {
   align-items: center;
 }
 
-.teacher__things{
-
+.teacher__things {
   padding-left: 35%;
   display: flex;
   flex-direction: column;
-justify-content: center;
+  justify-content: center;
 }
-.teacher__img{
+.teacher__img {
   top: -60px;
   left: 350px;
   position: absolute;
 }
-.teacher__img img{
+.teacher__img img {
   width: 300px;
 }
-.teacher{
+.teacher {
   position: relative;
   margin-bottom: 5%;
 }
- .btn{
+.btn {
   background-color: #0f7c90;
   color: white;
   width: 50%;
@@ -222,41 +256,41 @@ justify-content: center;
 }
 
 /* Business */
-.business__info{
+.business__info {
   padding: 4%;
   background-color: #003640;
   display: flex;
   justify-content: center;
 }
-.business__things{
+.business__things {
   color: white;
   padding-right: 20%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-
 }
-.business__info .btn{
+.business__info .btn {
   width: 75%;
 }
-.udemyBusiness{
+.udemyBusiness {
   position: relative;
-  margin-top:  10% ;
+  margin-top: 10%;
 }
-.business__img{
+.business__img {
   display: block;
   position: absolute;
   top: -60px;
   right: 200px;
 }
 
-.business__info h3, .teacher__info h3{
+.business__info h3,
+.teacher__info h3 {
   font-weight: bold;
   font-size: 2rem;
 }
 
 /* Sponsored */
-.sponsored{
+.sponsored {
   padding: 5%;
   display: flex;
   justify-content: centner;
@@ -265,27 +299,42 @@ justify-content: center;
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
 }
-.sponsored__logo{
+.sponsored__logo {
   display: flex;
   flex-direction: row;
 }
-.logo-item{
+.logo-item {
   margin: 10px;
 }
 
 /* H */
 .container1 {
+  position: relative;
   padding: 0rem 10rem;
 }
-.cartStatus{
+#cartItem:hover #cartStatus {
+  display: block;
+}
+#cartStatus {
+  z-index: 10000;
+  text-align: center;
+  width: 20%;
+  min-height: 20%;
+  background-color: white;
+  padding: 20px;
   position: absolute;
   top: 0;
+  left: 900px;
+  border: 0px solid grey;
+  display: none;
+}
+.keepShp {
+  color: #0f7c90;
 }
 .caiform {
   padding-top: 2.5rem;
   height: 25rem;
-  background-image: url('https://img-a.udemycdn.com/notices/home_banner/image_udlite/99df738c-23de-4ed8-b515-2ab6367cd595.jpg?Cby4vQCtvaPjb3ArGs-W9WVOYT9XuaiZ-k0uXB3rStUIpS8ImvgfDpVnlQxhCN50yEnDKKEHcUKX7veSXkuPle6OEtztHeZZPoTL8nWRrnrpehbyGY-8etnmo2JmysVKLmFlhARh2Psr2QweOOQmX_S0up2RbjzifyYgENH8WEukhUia1PUp4w');
-
+  background-image: url("https://img-a.udemycdn.com/notices/home_banner/image_udlite/99df738c-23de-4ed8-b515-2ab6367cd595.jpg?Cby4vQCtvaPjb3ArGs-W9WVOYT9XuaiZ-k0uXB3rStUIpS8ImvgfDpVnlQxhCN50yEnDKKEHcUKX7veSXkuPle6OEtztHeZZPoTL8nWRrnrpehbyGY-8etnmo2JmysVKLmFlhARh2Psr2QweOOQmX_S0up2RbjzifyYgENH8WEukhUia1PUp4w");
 }
 #header-img {
   width: 100%;
@@ -305,7 +354,7 @@ h4,
 p {
   margin: 0.5rem 0 !important;
   margin-top: 0 !important;
-  color: black !important;
+  color: black;
 }
 .icon::before {
   background-color: rgb(219, 219, 219);
@@ -348,4 +397,46 @@ p {
 }
 #hinh-trong-students-viewing {
   max-width: 100%;
+}
+
+.cartItem {
+  z-index: 1000;
+}
+
+.cartImg {
+  width: 20%;
+  height: 70px;
+  width: 70px;
+}
+.cartName {
+  font-weight: bold;
+}
+
+#clip-va-chu {
+  display: flex;
+}
+#chu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footerUl ul {
+  list-style: none;
+  margin: 3rem 3rem;
+}
+#udemy-footer {
+  width: 20%;
+}
+#pop {
+  position: absolute;
+  border: 1px solid black;
+  width: 20rem;
+  height: 20rem;
+  left: 22rem;
+  top: 4rem;
+  background-color: rgb(189, 189, 189);
+  display: none;
+}
+.cai-card:hover {
+  cursor: pointer;
 }

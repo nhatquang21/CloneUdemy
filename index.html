@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -50,9 +51,9 @@
 
     <!-- cho search -->
     <div class="container1">
+        <h1>Search result</h1>
         <div id="cho-tim-kiem"></div>
     </div>
-
 
 
     <!-- may dong chu duoi cho search -->
@@ -83,7 +84,6 @@
         </div>
     </div>
 
-
     <!-- cai cho student viewing -->
     <hr>
     <div class="container1">
@@ -92,7 +92,14 @@
     </div>
 
 
+    <!-- script cua popover -->
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
 </body>
+
 <script src="./script.js"></script>
 
 </html>

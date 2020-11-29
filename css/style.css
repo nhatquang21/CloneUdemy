@@ -362,3 +362,16 @@ ul {
 #udemy-footer {
   width: 20%;
 }
+#pop {
+  position: absolute;
+  border: 1px solid black;
+  width: 20rem;
+  height: 20rem;
+  left: 22rem;
+  top: 4rem;
+  background-color: rgb(189, 189, 189);
+  display: none;
+}
+.cai-card:hover {
+  cursor: pointer;
+}
